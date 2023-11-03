@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Healthcare Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:rgb(120, 231, 231);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px chartreuse;
+            padding: 200px;
+            padding-bottom: 0%;
+            padding-top: 0%;
+            text-align: center;
+            display: flex;
+        }
+
+        .left-section {
+            flex: 1;
+            text-align: left;
+            padding-right: 80px;
+           padding-top: 50px;
+        }
+
+        .right-section {
+            flex: 1;
+            padding-left: 100px;
+            padding-top: 250px;
+        }
+
+        .logo-image {
+            max-width: 900px;
+            height: 500px;
+            padding-bottom: 60px; 
+            margin-right: 80px;/* Adjust the maximum width as needed */
+        }
+
+        .login-container h1 {
+            font-size: 56px;
+            margin: 0%; /* Adjust the font size as needed */
+            margin-left: 50px;
+        }
+
+        .login-container pre {
+            margin: 0 0 60px;
+            font-size: 80px;
+            font-weight: bold;
+        }
+
+        .login-container label {
+            display: block;
+            margin: 10px 0;
+        }
+
+        .login-container .input-container {
+            position: relative;
+            margin: 20px 0;
+        }
+
+        .login-container .input-container input {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 3px;
+            padding-left: 0px; /* Space for the icon */
+        }
+
+        .login-container .input-container i {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+        }
+
+        .login-container input[type="submit"] {
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="left-section">
+            <h1 style="color: aqua;">YOUR HEALTH </h1>
+            <h1 style="color:#007BFF ;">IS OUR</h1>
+            <h1 style="color: aqua;">PRIORITY</h1>
+            <img src="img/medi.jpg" alt="Company Logo" class="logo-image" >
+        </div>
+        <div class="right-section">
+            
+            <pre style="color: aquamarine;"><img src="img/health-insurance.png" rel="icon" style="width: 66px; height: 66px;">Healthcare</pre>
+            <form action="login.php" method="post">
+                <div class="input-container">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" id="email" name="Email" placeholder="Email" required style="text-align: center;">
+                </div>
+
+                <div class="input-container">
+                    <i class="fa fa-lock"></i>
+                <input type="password" id="password" name="password" placeholder="Password" required style="text-align: center;">
+                </div>
+                <button style="padding: 10px; background-color: #7ea8d5;">
+                    <a href="file:///C:/Users/shreya/OneDrive/Desktop/project/symptoms.html" style="padding-left: 250px; padding-right: 250px; text-align: center;margin-left: 10px;font-size: medium; "><b>Login</b></a>
+                </button>
+                <p></p>
+                <div class="container" >
+                    <button type="button" class="cancelbtn" style="margin-right: 300px;font-size: medium;background-color: red; padding-left: 15px; padding-right: 15px;">Cancel</button>
+                    <span class="psw" style="font-size: medium;">Forgot <a href="#">password?</a></span>
+                  </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
